@@ -1,38 +1,264 @@
-.App {
-  text-align: center;
+.main{
+  margin: 0 auto;
+  display: block;
+  background-color: #141414;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.NAV-MAIN {
+  
+  min-width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav_style{
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
+  height: 60px;
+  width: 100%;
+  padding: 0 3%;
+ 
+  
+
+
+}
+.nav_style-scroll{
+  overflow: hidden;
+  display: flex;
+  
+  height: 60px;
+  width: 100%;
+  padding: 0 3%;
+  background: #141414;
+}
+
+.logo{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 95px;
+  margin-right: 20px;
+  cursor:pointer;
+}
+.nav_style p {
+  
+  margin-top: 20px;
+  margin-right: 20px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}
+.nav_style-scroll p {
+  
+  margin-top: 20px;
+  margin-right: 20px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+p:hover {
+  color: #9e7676;
+}
+
+
+
+.drop-wrapper{
+  display: flex;
+  align-items: flex-start;
+  right: 5rem;
+  position: relative;
+
+}
+
+.drop-menu_none{
+  display: inline;
+  position:relative;
+  display: none;
+}
+.drop-menu_show{
+  display: inline;
+  position: relative;
+  right: 0%;
+  
+  
+  display: inline-block;
+}
+.drop-menu_show input{
+  display: block;
+  outline: none;
+  background-color: #282727;
+  color: white;
+  bottom: 0;
+  text-align: right;
+  padding:0  1rem 0 1rem ;
+  border: 1px solid white;
+}
+svg{
+  color: #ffffff;
+  display: inline;
+  fill: currentColor;
+}
+
+.btn_{
+  
+  background-color: none;
+  color: #fff;
+  border: none;
+}
+.btn_scroll{
+  background: #141414;
+  color: #fff;
+  border: none;
+}
+.search-show{
+  margin-right: 1rem;
+  cursor:pointer;
+  position: relative;
+  display: inline;
+}
+.search-none{
+  position: relative;
+  display: none;
+}
+.search-none-button{
+  display: none;
+  
+}
+.search-input{
+  position: absolute;
+  display: inline;
+  left: 3%;
+
+}
+
+
+/* Head */
+.head-style{
+ display: flex;
+ width: 100%;
+ 
+}
+.Alert_SVG {
+  margin-right: 1rem;
+  display: inline;
+  background-color: rgb(255, 5, 5);
+
+  
+}
+.user{
+  display: inline;
+ 
+  background-color: rgb(255, 10, 10);
+  font-size: 12px;
+  margin-right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+
+
+
+.container-f{
+  max-width: 100%;
+}
+
+.box{
+  max-width: 100%;
+  height: 40em;
+  margin: 0 auto;
+  background-image:url(https://thezepiaworld.files.wordpress.com/2022/02/02.png?w=1200);
+  background-size: 100%;
+}
+.bt{
+  position: absolute;
+  display: inline;
+  bottom: 30%;
+  left: 5%;
+}
+.bt h2{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.bt_play{
+  background-color: #ffffff;
+  min-width: 6rem;
+  height: 2.5rem;
+  margin-right: 2rem;
+  border-radius: 1ex;
+  border :none;
+}
+.bt h1{
+  max-width: 20rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bt_play:hover{
+  background-color: rgb(220, 216, 224);
+}
+.active{
+  cursor:pointer;
+  transition: transform .3s;  
+}
+.active :hover{
+  
+  transform: scale(1) translate(10%, 10%);
+}
+.Slider1{
+  transition: transform .3s;  
+}
+
+
+.icon{
+  
+  color: #141414;
+}
+.bt_more{
+  border :none;
+  border-radius: 1ex;
+  height: 2.5rem;
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+}
+.title{
+  cursor: pointer;
+  color: white;
+}
+.Footer_{
+  color: white;
+}
+.box_f{
+  display: flex;
+  margin: 1rem 5rem;
+  justify-content: flex-start;
+  
+}
+.box_fb{
+  margin: 0 1rem;
+}
+.m-col{
+  color: grey;
+  margin: 0 5.5rem;
+  font-size: 13px;
+}
+.bt_service{
+  background-color: #141414;
+  border: 2px white;
+}
+.font_bt{
+  font-size: 12px ;
+  background-color: #141414;
+  color: gray;
+  border: 1px solid;
+  border-color:  gray;
+}
+.font_bt:hover{
+  font-size: 12px ;
+  background-color: #141414;
+  color: rgb(255, 255, 255);
+  border: 1px solid;
+  border-color:  gray;
+}
+.last{
+  color: gray;
+  font-size: 12px ;
+  margin: 0 5.5rem;
 }
